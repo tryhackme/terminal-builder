@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="https://assets.tryhackme.com/css/utils/terminal.css" rel="stylesheet" />
+	<link href="https://assets.tryhackme.com/css/libs/prism.css?v=0.1" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+	<div class="column">
+		<h2>Terminal Settings</h2>
+		<p>Edit the terminal settings here.</p>
+
+		<form>
+			<label for="terminalTitle">Terminal Title:</label>
+			<input type="text" value="Example Terminal" id="terminalTitle" name="terminalTitle">
+
+			<label for="terminalLanguage">Terminal Language:</label>
+				<select id="terminalLanguage" name="terminalLanguage">
+					<option value="shell-session">Shell Session (default)</option>
+					<option value="aspnet">ASP.NET (C#)</option>
+					<option value="bash">Bash</option>
+					<option value="c">C</option>
+					<option value="csharp">C#</option>
+					<option value="cpp">C++</option>
+					<option value="css">CSS</option>
+					<option value="dockerfile">Dockerfile</option>
+					<option value="git">Git</option>
+					<option value="go">Go</option>
+					<option value="haskell">Haskell</option>
+					<option value="html">HTML</option>
+					<option value="http">HTTP</option>
+					<option value="java">Java</option>
+					<option value="javascript">JavaScript</option>
+					<option value="lua">Lua</option>
+					<option value="markdown">Markdown</option>
+					<option value="nginx">Nginx</option>
+					<option value="perl">Perl</option>
+					<option value="php">PHP</option>
+					<option value="plaintext">Plaintext</option>
+					<option value="powershell">Powershell</option>
+					<option value="python">Python</option>
+					<option value="ruby">Ruby</option>
+					<option value="sql">SQL</option>
+					<option value="xml">XML</option>
+					<option value="yaml">Yaml</option>
+				</select>
+
+			<label for="terminalColour">Terminal Colour:</label>
+				<select id="terminalColour" name="terminalColour">
+					<option value="">Default (grey)</option>
+					<option value="defender">Defender (blue)</option>
+					<option value="attacker">Attacker (red)</option>
+				</select>
+
+			<label for="terminalOutput">Terminal Output:</label>
+
+<textarea id="terminalOutput" name="terminalOutput" rows="6" cols="40">
+user@tryhackme$ whoami
+www-data</textarea>
+		</form>
+
+	</div>
+
+
+<!--Live Preview-->
+	<div class="column">
+		<h2>Terminal Preview</h2>
+		<p>This is how your terminal output will appear in your room:</p>
+
+		<div class="terminal-container">
+		<div class="terminal-content" id="terminalColourPreview">
+			<div class="terminal-top" id="terminalTitlePreview">Example Terminal</div>
+			<pre class="terminal-code">
+<code class="language-shell-session" id="codePreview">user@tryhackme$ whoami
+www-data</code>
+			</pre>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--Code Output-->
+<div class="container">
+	<div class="column">
+		<h2>Code Output</h2>
+		<p>Copy and paste the code snippet below into your room's task. HTML characters have been escaped (encoded) to prevent render issues.</p>
+
+<textarea disabled id="codeOutput" name="codeOutput">
+<div class="terminal-container">
+    <div class="terminal-content ">
+        <div class="terminal-top">
+            Example Terminal
+        </div>
+        <pre class="terminal-code">
+           <code class="language-shell-session">user@tryhackme$ whoami
+www-data</code>
+        </pre>
+    </div>
+</div>
+</textarea>
+
+<button id="copyToClipboardButton">Copy to Clipboard</button>
+<button id="resetButton">Reset to Default</button>
+
+	</div>
+</div>
+
+	<script src="https://assets.tryhackme.com/js/libs/prism.js?v=0.1"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

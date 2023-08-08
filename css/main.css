@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+@import url('https://assets.tryhackme.com/css/callouts.css');
+@import url('https://assets.tryhackme.com/css/scrollbar.css');
+@import url('https://assets.tryhackme.com/css/levels.css?v=0.1');
+@import url('https://assets.tryhackme.com/css/flags.css');
+@import url('https://assets.tryhackme.com/css/paths.css?v=0.5');
+@import url('https://assets.tryhackme.com/css/categories.css');
+@import url('https://assets.tryhackme.com/css/jobs.css');
+@import url('https://assets.tryhackme.com/css/loader.css');
+@import url('https://assets.tryhackme.com/css/chartjs.css');
+@import url('https://assets.tryhackme.com/css/tables.css');
+@import url('https://assets.tryhackme.com/css/rooms.css?v=0.3');
+@import url('https://assets.tryhackme.com/css/shoutout.css');
+@import url('https://assets.tryhackme.com/css/borders.css');
+@import url('https://assets.tryhackme.com/css/alerts.css');
+@import url('https://assets.tryhackme.com/css/buttons.css');
+@import url('https://assets.tryhackme.com/css/forum/forum.css');
+
+:root {
+  --main-color: #212c42; /* 212c42 */
+  --avatar-border: #545454;
+  --moto-bg-color: #000f2b; /* 000f2b 850404 292c2e 22282b*/
+  --hacker-green: #88cc14;
+  --cool-red: #a20606;
+  --logged-out-bg: #111b29; /* 111b29 091b35 18283e */
+  --navbar-main-height: 85px;
+  --darkblue: #1c2331;
+  --darkblue-bg-color: #1c2538;
+  --optional-btn-color: #e9e9e9;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Ubuntu', monospace;
+}
+
+body {
+  font-family: 'Ubuntu', monospace;
+  background-color: #fafafa /* fafafa */;
+}
+
+input,select {
+    font-family: 'Ubuntu', monospace;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  font-family: Courier, monospace;
+  font-size: 16px;
+  display: block;
+  padding: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*****************************/
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+#codeOutput {
+  height: 250px;
+}
+
+#copyToClipboardButton {
+  background-color: rgb(40, 167, 69);
+  padding: 5px;
+  font-family: 'Ubuntu', monospace;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+#resetButton {
+  border: solid 1px gray;
+  color: gray;
+  background-color: transparent;
+  padding: 5px;
+  font-family: 'Ubuntu', monospace;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
